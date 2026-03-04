@@ -1,0 +1,97 @@
+/* SVG Container - Responsive et qui adhere aux divs */
+
+
+
+
+zoom-card {
+    overflow: hidden;
+}
+
+zoom-card img {
+    transition: transform 0.3s ease;
+}
+
+.zoom-card:hover  {
+    transform: scale(1.1);
+}
+
+
+.btn-success {
+    background-color: #00BA94 !important;
+    border-color: #00BA94 !important;
+}
+
+.btn-success:hover {
+    background-color: #14743c !important;
+    border-color: #14743c !important;
+}
+
+.container1 {
+    background-color: #EFF3F9;
+    
+}
+
+.inner {
+    background-color: #EFF3F9;
+    margin-top: -8%;
+}
+
+.page {
+   background-color: #EFF3F9;
+   margin-top: -8%;
+}
+
+.doc {
+    background-color: #EFF3F9;
+    margin-top: -10%;
+}
+
+.panier {
+    background-color: #EFF3F9;
+    margin-top: -3%;
+}
+
+.svg {
+    margin-top: -25px;
+}
+
+.svg1{
+    top: 20%;
+}
+
+
+
+/* Media Queries pour mobile - Retirer les marges negatives pour adherer les SVGs */
+@media (max-width: 768px) {
+    .svg, .svg1, .svg2 {
+        margin-top: -1px;
+    }
+    
+    .inner, .doc {
+        margin-top: 0;
+    }
+    
+    .row {
+        margin-top: 0;
+    }
+    
+    .svgx-container-fluid {
+        min-height: 120px;
+    }
+    
+    .btn {
+        margin-top: 30px;
+    }
+}
+
+/* Media Queries pour tablette */
+@media (max-width: 560px) {
+   .doc{
+    margin-top: -8%;
+   }
+
+   .row{
+    margin-top: -10px;
+   }
+}
+
