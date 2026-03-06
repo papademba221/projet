@@ -1,3 +1,18 @@
+/* Reset all external margins */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* SVG Container - Responsive et qui adhere aux divs */
 
 
@@ -36,14 +51,16 @@ zoom-card img {
     margin-top: -8%;
 }
 
-.page {
+.row .page {
    background-color: #EFF3F9;
    margin-top: -8%;
+    width: 1240px;
+    margin-left: 11px;
 }
 
 .doc {
     background-color: #EFF3F9;
-    margin-top: -10%;
+    margin-top: -12%;
 }
 
 .panier {
@@ -53,12 +70,18 @@ zoom-card img {
 
 .svg {
     margin-top: -25px;
+    width: 1240px;
+    margin-left: 11px;
 }
 
 .svg1{
     top: 20%;
 }
 
+.svg2{
+    width: 1240px;
+    margin-left: 11px;
+}
 
 
 /* Media Queries pour mobile - Retirer les marges negatives pour adherer les SVGs */
@@ -84,14 +107,61 @@ zoom-card img {
     }
 }
 
-/* Media Queries pour tablette */
+/* Media Queries pour mobile */
 @media (max-width: 560px) {
    .doc{
-    margin-top: -8%;
+    margin-top: -2%;
    }
+
+  
 
    .row{
     margin-top: -10px;
+   }
+
+   .svg2{
+    width: 296px;
+   }
+
+   .svg{
+    width: 297px;
+    margin-top: -20px;
+   }
+   
+   /* Coller le panier avec doc */
+   .panier {
+       margin-top: 80px;
+   }
+   
+   /* Supprimer l'espace entre doc et panier */
+   .svg1 {
+       margin-top: -30px;
+   }
+   
+   /* Centrer le bouton View demo et Documentation dans la section intro */
+   #intro .text-center.text-md-start.d-flex {
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       margin-right: 0 !important;
+   }
+   
+   #intro .btn-success {
+       width: auto;
+       margin-bottom: 10px;
+   }
+   
+   #intro .mt-1 {
+       margin-top: 0 !important;
+       margin-left: 0 !important;
+       text-align: center;
+   }
+}
+
+
+@media (min-width: 1024px) {
+   #intro .text-center.text-md-start.d-flex {
+       justify-content: center !important;
    }
 }
 
